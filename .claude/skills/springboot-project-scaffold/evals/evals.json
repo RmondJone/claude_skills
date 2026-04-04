@@ -1,0 +1,23 @@
+{
+  "skill_name": "springboot-project-scaffold",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "创建一个新的Spring Boot项目，项目名叫 myshop，使用 MySQL数据库，需要用户认证功能，使用JWT做token",
+      "expected_output": "生成完整的Spring Boot项目结构，包含build.gradle配置、application.yml、SecurityConfig、JWT认证相关代码、User实体、UserController、UserService、UserMapper等文件",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我初始化一个项目，需要包含Redis缓存、RabbitMQ消息队列、MyBatis Plus数据库操作，还有日志追踪功能",
+      "expected_output": "生成包含RedisConfig、RabbitMQ配置、MybatisPlusConfig、TraceIdFilter等配置类和工具类的项目骨架",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我想快速搭建一个Spring Boot后端项目，需要有统一响应格式、全局异常处理、API文档生成这些基础设施",
+      "expected_output": "生成Result.java、ResultCode.java、GlobalExceptionHandler.java、OpenApiConfig.java等基础设施代码",
+      "files": []
+    }
+  ]
+}
