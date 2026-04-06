@@ -215,13 +215,11 @@ Claude: (自动激活 springboot-project-scaffold 技能)
 
 ### Flutter 技术栈
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart"/>
-  <img src="https://img.shields.io/badge/GetX-4.7.3?style=for-the-badge&logo=state-management&logoColor=white" alt="GetX"/>
-  <img src="https://img.shields.io/badge/Dio-5.9.0?style=for-the-badge&logo=networking&logoColor=white" alt="Dio"/>
-  <img src="https://img.shields.io/badge/Hive-2.2.3?style=for-the-badge&logo=database&logoColor=white" alt="Hive"/>
-</p>
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![GetX](https://img.shields.io/badge/GetX-4.7.3-blue?style=flat-square)
+![Dio](https://img.shields.io/badge/Dio-5.9.0-blue?style=flat-square)
+![Hive](https://img.shields.io/badge/Hive-2.2.3-orange?style=flat-square)
 
 ### Spring Boot 技术栈
 
@@ -247,6 +245,6 @@ Claude: (自动激活 springboot-project-scaffold 技能)
 
 <div align="center">
 
-** Made with ❤️ by RmondJone**
+**Made with ❤️ by RmondJone**
 
 </div>
