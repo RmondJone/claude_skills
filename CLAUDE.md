@@ -21,7 +21,6 @@
 ## React 代码规范
 
 ### 组件定义
-- **页面级组件**：统一使用 class 类形式，禁止使用函数形式
 - **复杂 UI 组件**：按功能模块划分，抽离成独立的可复用 hook 组件
 
 ### 方法约束
@@ -38,26 +37,48 @@
 - 超过 100 行且**有通用性** → 抽离成独立的 hook 组件
 - 超过 100 行但**无通用性** → 按功能拆分成更小的 render 方法
 
+### 函数定义规范
+- **使用函数声明**：统一使用 `function fn() {}` 形式，不使用箭头函数 `const fn = () => {}`
+- **函数提升**：函数声明会提升到作用域顶部，允许在定义前调用
+- **私有方法前缀**：复杂逻辑用 `_handleXxx` 命名
+
 ### renderXXX 局部 UI 函数
 ```tsx
 // 注释：绘制待办事项视图
-// 时间：2026/1/31 17:33
+// 时间：2026/4/8 10:00
 // 作者：郭翰林
-renderToDoEventView() {
+function renderToDoEventView() {
   return <div>...</div>;
+}
+
+// 事件处理函数
+// 注释：处理删除操作
+// 时间：2026/4/8 10:00
+// 作者：郭翰林
+function _handleDelete(id) {
+  console.log('delete', id);
 }
 ```
 
 ### 组件注释规范
 ```tsx
-// 注释：类的简要描述
-// 时间：2026/1/31 17:33
+// 注释：首页组件
+// 时间：2026/4/8 10:00
 // 作者：郭翰林
-class HomePage extends Component {
-  // 注释：方法的功能描述
-  // 时间：2026/1/31 17:33
+export default function HomePage() {
+  // 注释：渲染头部
+  // 时间：2026/4/8 10:00
   // 作者：郭翰林
-  renderHeader() { ... }
+  function renderHeader() {
+    return <header>...</header>;
+  }
+
+  return (
+    <div>
+      {renderHeader()}
+      <button onClick={() => _handleDelete(1)}>删除</button>
+    </div>
+  );
 }
 ```
 
