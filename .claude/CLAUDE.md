@@ -15,5 +15,7 @@
 - 后端接口设计时，不允许在请求路径上面添加变量这种形式，需要使用入参的形式
 - 修改后的代码或新生成的代码禁止git commit
 - 使用pencli mcp完成UI绘制之后，让用户自己检查还原度情况，不要调用任何MCP来进行还原度测试
-- React 代码规范参考 ./rules/react/ 文件夹
-- Flutter 代码规范参考 ./rules/flutter/ 文件夹
+- React 代码规范参考 ~/.claude/rules/react/ 文件夹
+- Flutter 代码规范参考 ~/.claude/rules/flutter/ 文件夹
+- 凡是涉及接口代码生成类的工作，都需要调用YAPI MCP拿接口定义，除非用户显式声明不用
+- 遇到工程报错或者运行时报错，首先调用 JetBrains MCP查看报错日志
