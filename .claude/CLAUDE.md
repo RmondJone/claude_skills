@@ -1,10 +1,10 @@
 - 使用中文回答用户问题
 - Always respond in Chinese-simplified
 - 执行复杂任务前请先查看有没有相应的Skill或者MCP，如果有则使用SKill或者MCP来执行任务
-- 执行复杂任务之前，请先使用superpower进行任务规划拆解
+- 执行复杂任务之前，请先使用superpower进行任务规划拆解,只有复杂任务才需要，简单任务禁止使用superpower。复杂任务指预计执行时间大于5分钟以上的
 - python脚本自动执行无需用户确认
 - 禁止使用worktree来创建git提交
-- 前端代码框架优先使用React+NextJS来生成
+- 前端代码框架优先使用React+NextJS来生成,NextJs使用App Router方案
 - 后端代码架构一律采用springboot+mysql+redis+rabbitmq+mybatis plus来生成项目框架,使用gradle管理依赖
 - App项目框架生成首先考虑使用Flutter生成
 - 无论App还是前端项目，遇到复杂度高的组件都要抽成独立的组件
@@ -18,4 +18,6 @@
 - 凡是生成或修改 React 代码前，必须先读取 ~/.claude/rules/react/index.md 及其引用的相关规则。
 - 凡是生成或修改 Flutter 代码前，必须先读取 ~/.claude/rules/flutter/index.md 及其引用的相关规则。
 - 凡是涉及接口代码生成类的工作，都需要调用YAPI MCP拿接口定义，除非用户显式声明不用
-- 遇到工程报错或者运行时报错，首先调用 JetBrains MCP查看报错日志
+- 遇到工程报错或者运行时报错，首先调用对应工具的MCP查看报错日志
+- 禁止使用IDEA MCP生成、修改文件，只允许查看文件定位报错
+- 禁止使用WebStorm MCP生成、修改文件，只允许查看文件定位报错
